@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-username.github.io/your-repository-name/</loc>
+    <loc>https://decencyokobia.github.io/website/</loc>
     <lastmod>2025-04-08</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://your-username.github.io/your-repository-name/about</loc>
+    <loc>https://decencyokobia.github.io/website/about</loc>
     <lastmod>2025-04-08</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://your-username.github.io/your-repository-name/portfolio</loc>
+    <loc>https://decencyokobia.github.io/website/portfolio</loc>
     <lastmod>2025-04-08</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://your-username.github.io/your-repository-name/contact</loc>
+    <loc>https://decencyokobia.github.io/website/blog</loc>
     <lastmod>2025-04-08</lastmod>
     <priority>0.8</priority>
   </url>
-  <!-- Add more pages as needed -->
+  <url>
+    <loc>https://decencyokobia.github.io/website/contact</loc>
+    <lastmod>2025-04-08</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>
