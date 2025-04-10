@@ -189,52 +189,120 @@
 					journey smoother. I’d really
 					appreciate it.
 				</p>
+				<a href="#post2" class="myPortfolioLinks" title="100 days of code challenge">Next post</a>
 
-				<p>Stay tuned for my next post, where I’ll be diving into HTML—why I think it’s essential and how I’ve
-					managed to study it despite a packed schedule.</p>
 
+				<hr />
+				<section id="post2">
+					<h3>#100DaysOfCode Challenge</h3>
+					<span class="image main"><img src="images/100daysofcode.webp"
+							alt="poster on the 100 days of code challenge" loading="lazy" /></span>
+
+					<p>Today has been a successful day for me, and I hope the same for you! It's Day 2 of
+						#100DaysOfCode, and I’ve managed to develop a mini weather app. It's not deployed yet, but
+						that's my goal for tomorrow. Aside from coding and developing my technical skills, I've also
+						been focusing on improving my time management. I realized I could easily spend the whole day on
+						my laptop, especially after eating and showering. I tend to avoid distractions like video games,
+						which is a good thing, but I want to strike a better balance.
+
+						I came across a concept called the 8-8-8 rule: 8 hours of work, 8 hours of sleep, and 8 hours of
+						leisure with family or friends, or anything non-work related. I didn't fully implement it today,
+						but it's something I'm working towards. Anyway, back to the weather app I built. I’ll share my
+						key takeaways, challenges, reflections, and goals under the following headings:</p>
+					<section>
+						<h4>learning point:</h4>
+
+						<p>1. <b>Axios & useEffect</b>:
+							Axios is a popular library in React used to fetch data, similar to the fetch API in vanilla
+							JavaScript. I’ve used Axios before, so I’m familiar with how to fetch data and handle errors
+							in the console. useEffect is a React hook used to manage side effects, like fetching data.
+							Today, I managed to structure my app by creating a services folder with an api-client.ts and
+							an apiKey.ts file. This modular approach helped keep things clean and organized.</p>
+
+						<p>2. <b>AbortController</b>:
+							This was a new concept for me. The AbortController is used to cancel HTTP requests, which
+							helps prevent unwanted re-renders or remounting due to React's strict implementation. I used
+							it to signal the request cancellation once the data was fetched, making my app more
+							efficient.</p>
+
+						<p>3. <b>Weather Icons</b>:
+							Initially, I thought I’d just hardcode icons based on the weather type. But then, I realized
+							I could use an array to store the icons and dynamically reference them using the index. This
+							was a simple array iteration concept, but with React, I didn’t have to manually loop through
+							as I would in vanilla JavaScript. Also, I learned how to use as keyof typeof for arrays,
+							which helps avoid undefined errors when indexing.</p>
+					</section>
+					<section>
+						<h4>Challenges:</h4>
+						<p>I encountered some challenges fetching the data today, despite having worked with APIs
+							before. Each API structure is different, so it took a bit of trial and error to map my data
+							correctly. Some responses were arrays of objects, others were objects containing arrays and
+							other objects. I quickly realized that logging the response in the console was essential for
+							understanding the structure and ensuring I defined the correct props. It was a bit
+							frustrating at times, but ultimately, I made it work, and that’s what matters. </p>
+					</section>
+					<section>
+						<h4>Reflection:</h4>
+						<p>Looking back, I would make sure to study the structure of the data before trying to fetch it,
+							to better align my props with how the data is structured. There’s always room for
+							improvement, but I’m proud of the progress I made today. One of the highlights was using
+							React Hook Form and Bootstrap to create a dynamic input field, which allowed me to change
+							the city in the weather app without hardcoding values. I had a similar experience while
+							working on my expense tracker project, so it felt great to apply what I learned in one
+							project to another seamlessly. To me, programming is all about taking an idea, explaining it
+							clearly (even to yourself), and then implementing it with the right tools. If you can break
+							it down, you can build it.</p>
+					</section>
+					<section>
+						<h4>Goal:</h4>
+						<p>My next goal is to deploy the weather app and refine it a bit before pushing it to GitHub
+							Pages. I’m not focusing too much on UI/UX right now, but I’ll make sure to fine-tune it
+							tomorrow before the deployment. I’ve also got my MSc project to consider, but for now, I’m
+							staying motivated and pushing forward. No giving up!</p>
+					</section>
+				</section>
 
 			</article>
 
-
-			<!-- Contact -->
-			<article id="contact">
-				<h2 class="major">Contact</h2>
-				<form method="post" action="https://formspree.io/f/mqaeoyyn">
-					<div class="fields">
-						<div class="field half">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
+			< <!-- Contact -->
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					<form method="post" action="https://formspree.io/f/mqaeoyyn">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4"></textarea>
+							</div>
 						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="4"></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" class="primary" /></li>
-						<li><input type="reset" value="Reset" /></li>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+					<ul class="icons">
+						<li><a href="https://x.com/decency_codes" target="_blank" class="icon brands fa-twitter"
+								aria-label="link to my twitter page" title="twitter page"><span
+									class="label">Twitter</span></a>
+						</li>
+						<li><a href="https://www.youtube.com/channel/UClxetwDeWZrPzhiRKoIe2nA" target="_blank"
+								aria-label="link to my youtube page" title="youtube channel"
+								class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+						<li><a href="https://www.linkedin.com/in/decency-okobia/" target="_blank"
+								aria-label="link to my linkedIn page" title="linkedIn page"
+								class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/decencyokobia" target="_blank"
+								aria-label="link to my github page" title="github page"
+								class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 					</ul>
-				</form>
-				<ul class="icons">
-					<li><a href="https://x.com/decency_codes" target="_blank" class="icon brands fa-twitter"
-							aria-label="link to my twitter page" title="twitter page"><span
-								class="label">Twitter</span></a>
-					</li>
-					<li><a href="https://www.youtube.com/channel/UClxetwDeWZrPzhiRKoIe2nA" target="_blank"
-							aria-label="link to my youtube page" title="youtube channel"
-							class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-					<li><a href="https://www.linkedin.com/in/decency-okobia/" target="_blank"
-							aria-label="link to my linkedIn page" title="linkedIn page"
-							class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/decencyokobia" target="_blank" aria-label="link to my github page"
-							title="github page" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-			</article>
+				</article>
 
 
 		</div>
