@@ -21,9 +21,13 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://decencyokobia.github.io/website/post2</loc>
+    <lastmod>2025-04-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://decencyokobia.github.io/website/contact</loc>
     <lastmod>2025-04-09</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
-
