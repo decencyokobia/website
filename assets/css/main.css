@@ -1680,3 +1680,9 @@ input, select, textarea {
 .myPortfolioLinks:hover {
 	color: hsl(120, 100%, 55%);
 }
+
+.blogPostFooter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
