@@ -344,10 +344,10 @@
 
 						<li>Use that state to render only the relevant todos:</li>
 					</ol>
-					<code>const displayTodos = todos.filter(todo => {
-							if (filter === 'active') return !todo.complete;
-							if (filter === 'completed') return todo.complete;
-							return true;
+					<code>const displayTodos = todos.filter(todo => {<br>
+							if (filter === 'active') return !todo.complete;<br>
+							if (filter === 'completed') return todo.complete;<br>
+							return true;<br>
 						  });</code>
 					<p>It sounds simple now, but it took a few tries before it really clicked. Definitely planning to
 						practice this more.
@@ -360,8 +360,11 @@
 						😅<br>
 
 						I’ll still go ahead and finish the UI and post a proper update once it’s ready. Here’s a sneak
-						peek of what I’ve built so far (images are from the free version — not the best quality, but
+						peek of what I’ve built so far -
+						(images are from the free version — not the best quality, but
 						hey, it’s for learning, not commercial use!):
+						<span class="image main"><img src="./images/recipe-app.webp"
+								alt="ongoing recipe app built with react + typescript"></span>
 					</p>
 					<h4>Reflection</h4>
 					<p>Every step, no matter how small, counts. I’m proud of my progress — building real things,
