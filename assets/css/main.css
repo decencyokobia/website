@@ -1728,7 +1728,7 @@ input, select, textarea {
 	display: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 595px){
 	.myNav-links li {
 		display: none;
 	}
