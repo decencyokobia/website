@@ -1671,13 +1671,13 @@ input, select, textarea {
 
 /* extra styles */
 .myPortfolioLinks {
-	color: green;
+	color: hsl(120, 100%, 45%);
 	font-weight: bold;
-	transition: color 0.5s ease-in-out;
+	transition: color 0.3s ease-in-out;
 }
 
 .myPortfolioLinks:hover {
-	color: hsl(120, 100%, 55%);
+	color: hsl(120, 100%, 95%);
 }
 
 .blogPostFooter {
