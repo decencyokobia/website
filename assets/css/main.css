@@ -1580,12 +1580,12 @@ input, select, textarea {
 				white-space: nowrap;
 			}
 
-				#main article .close:before {
-					-moz-transition: background-color 0.2s ease-in-out;
+				/* #main article .close:before { */
+					/* -moz-transition: background-color 0.2s ease-in-out;
 					-webkit-transition: background-color 0.2s ease-in-out;
 					-ms-transition: background-color 0.2s ease-in-out;
-					transition: background-color 0.2s ease-in-out;
-					content: '';
+					transition: background-color 0.2s ease-in-out; */
+					/* content: '';
 					display: block;
 					position: absolute;
 					top: 0.75rem;
@@ -1593,19 +1593,19 @@ input, select, textarea {
 					width: 2.5rem;
 					height: 2.5rem;
 					border-radius: 100%;
-					background-position: center;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
-					background-size: 20px 20px;
-					background-repeat: no-repeat;
-				}
+					background-position: center; */
+					/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E"); */
+					/* background-size: 20px 20px;
+					background-repeat: no-repeat; */
+				/* } */
 
-				#main article .close:hover:before {
+				/* #main article .close:hover:before {
 					background-color: rgba(255, 255, 255, 0.075);
 				}
 
 				#main article .close:active:before {
 					background-color: rgba(255, 255, 255, 0.175);
-				}
+				} */
 
 		@media screen and (max-width: 736px) {
 
@@ -1613,13 +1613,13 @@ input, select, textarea {
 				padding: 3.5rem 2rem 0.5rem 2rem ;
 			}
 
-				#main article .close:before {
+				/* #main article .close:before {
 					top: 0.875rem;
 					left: 0.875rem;
 					width: 2.25rem;
 					height: 2.25rem;
 					background-size: 14px 14px;
-				}
+				} */
 
 		}
 
@@ -1685,3 +1685,25 @@ input, select, textarea {
 	justify-content: space-between;
 	align-items: center;
 }
+
+.page-nav ul {
+	display: flex;
+	list-style: none;
+	float: right;
+	
+}
+
+.page-nav ul > li > a {
+	text-decoration: none;
+	border: none;
+	font-weight: 400;
+	padding: 0.4rem;
+	border-radius: 0.5rem;
+}
+
+.page-nav ul > li > a:hover {
+	background-color: gray
+	
+}
+
+
