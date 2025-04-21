@@ -1712,11 +1712,15 @@ input, select, textarea {
 	align-items: center;
 }
 
-#menuBar {
+.menuBar.show {
 	display: none;
 }
 
-.mySidebar-links ul {
+.closeBar.show {
+	display: none;
+}
+
+.mySidebar-links.show {
 	display: none;
 }
 
@@ -1724,29 +1728,30 @@ input, select, textarea {
 	.myNav-links li {
 		display: none;
 	}
-	#menuBar {
+	.menuBar.show {
 		display: flex;
 		cursor: pointer;
-		transition: box-shadow 0.3s ease-in-out;
+		transition: all 0.4s ease-in-out;
 	}
-	#menuBar:hover {
+	.menuBar.show:hover {
 		box-shadow: 0 0 5px 0 hsl(0, 0%, 80%);
 	}
-	#closeBar {
+	.closeBar.show {
 		display: none;
 		cursor: pointer;
-		transition: box-shadow 0.3s ease-in-out;
+		transition: all 0.4s ease-in-out;
 	}
-	#closeBar:hover {
+	.closeBar.show:hover {
 		box-shadow: 0 0 5px 0 hsl(0, 0%, 80%);
 	}
-	#mySidebar-links {
+	.mySidebar-links.show {
 		background-color: rgba(27, 31, 34, 0.85);
-		display: none;
 		flex-direction: column;
 		position: fixed;
 		right: 25px;
-	}#mySidebar-links a {
+		transition: all 0.4s ease-in-out;
+		display: none;
+	}.mySidebar-links.show a {
 		margin-left: -1.5rem;
 	}
 }

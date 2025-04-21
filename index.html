@@ -75,26 +75,28 @@
 		<!-- Main -->
 		<div id="main">
 
+
 			<!--c About -->
 			<article id="about">
 				<div class="navigation-header">
 					<h2 class="major">About</h2>
+					<!--Navigation-->
 					<nav class="page-nav">
-						<div id="menuBar">
+						<div class="menuBar show">
 							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
 								fill="#fff">
 								<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
 							</svg>
 						</div>
-						<div id="closeBar">
+						<div class="closeBar show">
 							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-								fill="#fff">
+								fill="red">
 								<path
 									d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
 							</svg>
 						</div>
 						<div>
-							<ul id="mySidebar-links">
+							<ul class="mySidebar-links show">
 								<li class="mySidebar-item"><a href="#portfolio">Portfolio</a></li>
 								<li class="mySidebar-item"><a href="#blog">Blog</a></li>
 								<li class="mySidebar-item"><a href="#contact">Contact</a></li>
@@ -134,26 +136,49 @@
 
 			<!--c Portfolio -->
 			<article id="portfolio">
+
 				<div class="navigation-header">
 					<h2 class="major">Portfolio</h2>
 					<nav class="page-nav">
-						<ul>
+						<div class="menuBar show">
+							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+								fill="#fff">
+								<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+							</svg>
+						</div>
+						<div class="closeBar show">
+							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+								fill="red">
+								<path
+									d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+							</svg>
+						</div>
+						<div>
+							<ul class="mySidebar-links show">
+								<li class="mySidebar-item"><a href="#about">About</a></li>
+								<li class="mySidebar-item"><a href="#blog">Blog</a></li>
+								<li class="mySidebar-item"><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+						<ul class="myNav-links">
 							<li><a href="#about">About</a></li>
 							<li><a href="#blog">Blog</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
-					<!-- Google tag (gtag.js) -->
-					<script async src="https://www.googletagmanager.com/gtag/js?id=G-BEVMYTGVKY"></script>
-					<script>
-						window.dataLayer = window.dataLayer || [];
-						function gtag() { dataLayer.push(arguments); }
-						gtag('js', new Date());
-
-						gtag('config', 'G-BEVMYTGVKY');
-					</script>
 
 				</div>
+				<!-- Google tag (gtag.js) -->
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-BEVMYTGVKY"></script>
+				<script>
+					window.dataLayer = window.dataLayer || [];
+					function gtag() { dataLayer.push(arguments); }
+					gtag('js', new Date());
+
+					gtag('config', 'G-BEVMYTGVKY');
+				</script>
+
+
 				<span class="image main"><a href="https://decencyokobia.github.io/landing-page1/" target="_blank"
 						title="landing page built with html and css"
 						aria-label="landing page built with html and css, uploaded to my github account"><img
@@ -243,12 +268,33 @@
 				<div class="navigation-header">
 					<h2 class="major">Blog</h2>
 					<nav class="page-nav">
-						<ul>
+						<div class="menuBar show">
+							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+								fill="#fff">
+								<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+							</svg>
+						</div>
+						<div class="closeBar show">
+							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+								fill="red">
+								<path
+									d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+							</svg>
+						</div>
+						<div>
+							<ul class="mySidebar-links show">
+								<li class="mySidebar-item"><a href="#about">About</a></li>
+								<li class="mySidebar-item"><a href="#portfolio">portfolio</a></li>
+								<li class="mySidebar-item"><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+						<ul class="myNav-links">
 							<li><a href="#about">About</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#portfolio">portfolio</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
+
 					<!-- Google tag (gtag.js) -->
 					<script async src="https://www.googletagmanager.com/gtag/js?id=G-BEVMYTGVKY"></script>
 					<script>
@@ -499,7 +545,16 @@
 
 					gtag('config', 'G-BEVMYTGVKY');
 				</script>
-				<h2 class="major">Contact</h2>
+				<div class="navigation-header">
+					<h2 class="major">Contact</h2>
+					<nav class="page-nav">
+						<ul>
+							<li><a href="#about">About</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#blog">Blog</a></li>
+						</ul>
+					</nav>
+				</div>
 				<form method="post" action="https://formspree.io/f/mqaeoyyn">
 					<div class="fields">
 						<div class="field half">
