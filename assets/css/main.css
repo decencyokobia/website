@@ -1724,6 +1724,10 @@ input, select, textarea {
 	display: none;
 }
 
+.mobile {
+	display: none;
+}
+
 @media screen and (max-width: 400px){
 	.myNav-links li {
 		display: none;
@@ -1753,6 +1757,10 @@ input, select, textarea {
 		display: none;
 	}.mySidebar-links.show a {
 		margin-left: -1.5rem;
+	}.mobile {
+		display: flex;
+	}.mobile a {
+		border-bottom: none;
 	}
 }
 
