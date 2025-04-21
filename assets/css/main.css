@@ -1732,32 +1732,7 @@ input, select, textarea {
 	.myNav-links li {
 		display: none;
 	}
-	.menuBar.show {
-		display: flex;
-		cursor: pointer;
-		transition: all 0.4s ease-in-out;
-	}
-	.menuBar.show:hover {
-		box-shadow: 0 0 5px 0 hsl(0, 0%, 80%);
-	}
-	.closeBar.show {
-		display: none;
-		cursor: pointer;
-		transition: all 0.4s ease-in-out;
-	}
-	.closeBar.show:hover {
-		box-shadow: 0 0 5px 0 hsl(0, 0%, 80%);
-	}
-	.mySidebar-links.show {
-		background-color: rgba(27, 31, 34, 0.85);
-		flex-direction: column;
-		position: fixed;
-		right: 25px;
-		transition: all 0.4s ease-in-out;
-		display: none;
-	}.mySidebar-links.show a {
-		margin-left: -1.5rem;
-	}.mobile {
+	.mobile {
 		display: flex;
 	}.mobile a {
 		border-bottom: none;
