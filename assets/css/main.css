@@ -1704,7 +1704,6 @@ input, select, textarea {
 
 .page-nav ul > li > a:hover {
 	background-color: rgba(255, 255, 255, 0.095);
-	
 }
 
 .navigation-header {
@@ -1712,5 +1711,46 @@ input, select, textarea {
 	justify-content: space-between;
 	align-items: center;
 }
+
+#menuBar {
+	display: none;
+}
+
+.mySidebar-links ul {
+	display: none;
+}
+
+@media screen and (max-width: 400px){
+	.myNav-links li {
+		display: none;
+	}
+	#menuBar {
+		display: flex;
+		cursor: pointer;
+		transition: box-shadow 0.3s ease-in-out;
+	}
+	#menuBar:hover {
+		box-shadow: 0 0 5px 0 hsl(0, 0%, 80%);
+	}
+	#closeBar {
+		display: none;
+		cursor: pointer;
+		transition: box-shadow 0.3s ease-in-out;
+	}
+	#closeBar:hover {
+		box-shadow: 0 0 5px 0 hsl(0, 0%, 80%);
+	}
+	#mySidebar-links {
+		background-color: rgba(27, 31, 34, 0.85);
+		display: none;
+		flex-direction: column;
+		position: fixed;
+		right: 25px;
+	}#mySidebar-links a {
+		margin-left: -1.5rem;
+	}
+}
+
+
 
 
