@@ -1686,7 +1686,11 @@ input, select, textarea {
 	align-items: center;
 }
 
-.page-nav ul {
+.page-nav {
+	position: relative;
+}
+
+.page-nav ul , .blogpostNav {
 	display: flex;
 	list-style: none;
 	float: right;
@@ -1712,30 +1716,74 @@ input, select, textarea {
 	align-items: center;
 }
 
-.menuBar.show {
+#blog-links, ul#blogSideBar {
+	list-style: none;
+	display: flex;
+}
+
+#blog-links li a, ul#blogSideBar li a {
+	border-bottom: none;
+	font-weight: 400;
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+
+#blog-links li a:hover {
+	background-color: rgba(255, 255, 255, 0.095);
+}
+
+.blogPost-container {
+	max-width: 800px;
+	font-size: 1.2rem;
+	
+}
+
+.blogPost-container h3 {
+	font-size: 1.1rem;
+}
+
+#mobileMenuBar, #mobileCloseBar {
+	margin-top: -2rem;
+}
+
+.mobile, #mobileMenuBar, #mobileCloseBar, ul#blogSideBar {
 	display: none;
 }
 
-.closeBar.show {
-	display: none;
-}
-
-.mySidebar-links.show {
-	display: none;
-}
-
-.mobile {
-	display: none;
+@media screen and (min-width: 596px) {
+	#mobileMenuBar,
+	#mobileCloseBar,
+	ul#blogSideBar {
+		display: none !important;
+	}
 }
 
 @media screen and (max-width: 595px){
-	.myNav-links li {
+	.myNav-links li, #mobileCloseBar, #blog-links {
 		display: none;
 	}
-	.mobile {
+	.mobile, #mobileMenuBar {
 		display: flex;
 	}.mobile a {
 		border-bottom: none;
+	}#mobileMenuBar, #mobileCloseBar {
+		cursor: pointer;
+	}#mobileMenuBar:hover, #mobileCloseBar:hover {
+		box-shadow: 0 0 10px 0 white;
+	}ul#blogSideBar {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		right: 15px;
+		top: 65px;
+		background-color: black;
+		padding: 1rem;
+		z-index: 9;
+		height: 15vh;
+	}ul#blogSideBar li a{
+		padding: 0;
+	}ul#blogSideBar li a:hover {
+		color: red;
 	}
 }
 
